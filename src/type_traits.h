@@ -43,8 +43,8 @@ namespace vaatv::traits {
         struct tuple_filter<std::tuple<Ts...>, predicate>
         {
             /* ToDo(m.rozanski): refactor
-             * brew a pot of coffee and contemplate how to implement are more readable and understandable version. Until
-             * then I beg the mighty compiler gods to never fail here ... ¯\_(ツ)_/¯ */
+             * brew a pot of coffee and contemplate how to implement a more readable and understandable version. Until
+             * then I beg the almighty compiler to never fail here ... ¯\_(ツ)_/¯ */
             using type =
                 decltype(
                     std::tuple_cat(
