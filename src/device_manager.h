@@ -66,16 +66,18 @@ namespace vaatv {
     // endregion
     
     protected:
+    // region helper functions
         /* unpacks in_place_type of std::tuple back to a variadic args call */
         template <concepts::user_device ... Ts>
         void login_inplace_resolver(std::in_place_type_t<std::tuple<Ts...>>) { // NOLINT(readability-named-parameter)
             login<Ts ... >();
         }
+
         template <concepts::user_device ... Ts>
         void logout_inplace_resolver(std::in_place_type_t<std::tuple<Ts...>>) { // NOLINT(readability-named-parameter)
             logout<Ts ... >();
         }
-
+    // endregion
     };
 }  // namespace vaatv
 
