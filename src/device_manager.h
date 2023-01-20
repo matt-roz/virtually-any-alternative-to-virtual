@@ -1,8 +1,6 @@
 #ifndef VAATV_DEVICE_MANAGER_H
 #define VAATV_DEVICE_MANAGER_H
 
-#include <iostream>
-
 #include <tuple>
 
 #include "concepts.h"
